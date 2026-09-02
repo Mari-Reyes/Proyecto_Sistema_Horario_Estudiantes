@@ -1,0 +1,150 @@
+[
+{
+"materia": "Matematicas",
+"dia": "Lunes",
+"hora_inicio": "08:00",
+"hora_fin": "10:00",
+"ubicacion": "Aula 104"
+},
+{
+"materia": "Historia",
+"dia": "Lunes",
+"hora_inicio": "10:00",
+"hora_fin": "12:00",
+"ubicacion": "Aula 106"
+},
+{
+"materia": "Almuerzo",
+"dia": "Lunes",
+"hora_inicio": "12:00",
+"hora_fin": "02:00",
+"ubicacion": "Restaurante Estudiantil"
+},
+{
+"materia": "Libre",
+"dia": "Lunes",
+"hora_inicio": "02:00",
+"hora_fin": "04:00",
+"ubicacion": "Aula 104"
+},
+
+
+{
+"materia": "Tecnologia",
+"dia": "Martes",
+"hora_inicio": "08:00",
+"hora_fin": "10:00",
+"ubicacion": "Aula 102"
+},
+{
+"materia": "Ingles",
+"dia": "Martes",
+"hora_inicio": "10:00",
+"hora_fin": "12:00",
+"ubicacion": "Aula 106"
+},
+{
+"materia": "Almuerzo",
+"dia": "Martes",
+"hora_inicio": "12:00",
+"hora_fin": "02:00",
+"ubicacion": "Restaurante Estudiantil"
+},
+{
+"materia": "Biologia",
+"dia": "Martes",
+"hora_inicio": "02:00",
+"hora_fin": "04:00",
+"ubicacion": "Aula 202"
+},
+
+
+{
+"materia": "Quimica",
+"dia": "Miercoles",
+"hora_inicio": "08:00",
+"hora_fin": "10:00",
+"ubicacion": "Aula 104"
+},
+{
+"materia": "Libre",
+"dia": "Miercoles",
+"hora_inicio": "10:00",
+"hora_fin": "12:00",
+"ubicacion": "Aula 505"
+},
+{
+"materia": "Almuerzo",
+"dia": "Miercoles",
+"hora_inicio": "12:00",
+"hora_fin": "02:00",
+"ubicacion": "Restaurante Estudiantil"
+},
+{
+"materia": "Matematicas",
+"dia": "Miercoles",
+"hora_inicio": "02:00",
+"hora_fin": "04:00",
+"ubicacion": "Aula 303"
+},
+
+
+{
+"materia": "Ingles",
+"dia": "Jueves",
+"hora_inicio": "08:00",
+"hora_fin": "10:00",
+"ubicacion": "Aula 104"
+},
+{
+"materia": "Robotica",
+"dia": "Jueves",
+"hora_inicio": "10:00",
+"hora_fin": "12:00",
+"ubicacion": "Aula 106"
+},
+{
+"materia": "Almuerzo",
+"dia": "Jueves",
+"hora_inicio": "12:00",
+"hora_fin": "02:00",
+"ubicacion": "Restaurante Estudiantil"
+},
+{
+"materia": "Historia",
+"dia": "Jueves",
+"hora_inicio": "02:00",
+"hora_fin": "04:00",
+"ubicacion": "Aula 303"
+},
+
+
+{
+"materia": "Libre",
+"dia": "Viernes",
+"hora_inicio": "08:00",
+"hora_fin": "10:00",
+"ubicacion": "Aula 505"
+},
+{
+"materia": "Fisica",
+"dia": "Viernes",
+"hora_inicio": "10:00",
+"hora_fin": "12:00",
+"ubicacion": "Aula 105"
+},
+{
+"materia": "Almuerzo",
+"dia": "Viernes",
+"hora_inicio": "12:00",
+"hora_fin": "02:00",
+"ubicacion": "Restaurante Estudiantil"
+},
+{
+"materia": "Quimica",
+"dia": "Viernes",
+"hora_inicio": "02:00",
+"hora_fin": "04:00",
+"ubicacion": "Aula 105"
+}
+]
