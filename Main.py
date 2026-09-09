@@ -1,4 +1,4 @@
-from Funciones import mostrar_horario, agregar_evento, modificar_evento, eliminar_evento   
+from Funciones import DIAS_VALIDOS_ORDENADOS, mostrar_horario, agregar_evento, modificar_evento, eliminar_evento, reporte_diario
 
 # ============================================================================
 # MENÚ PRINCIPAL
@@ -14,7 +14,8 @@ while True:
         '2. Modificar evento o clase\n'
         '3. Eliminar evento o clase\n'
         '4. Generar reporte de horario final\n'
-        '5. Salir\n'
+        '5. Reporte diario \n'
+        '6. Salir\n'
         'Selecciona una opción: '
     ).strip().capitalize()
     
@@ -29,8 +30,11 @@ while True:
         
     elif opciones == '4':
         mostrar_horario()  # Llama a la función de mostrar
-    
+        
     elif opciones == '5':
+        reporte_diario(DIAS_VALIDOS_ORDENADOS)
+    
+    elif opciones == '6':
         print('')
         print('Saliendo del programa...')
         break

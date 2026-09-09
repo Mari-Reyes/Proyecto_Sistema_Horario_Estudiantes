@@ -3,6 +3,7 @@
 #=============================================================================
 import json
 from datetime import datetime
+import re
 
 # Cargar el horario al inicio----------------------------------------------------------------------------------------
 with open('RegistroHorario.json', 'r', encoding='utf-8') as f:
@@ -10,9 +11,14 @@ with open('RegistroHorario.json', 'r', encoding='utf-8') as f:
     
     with open('Reportes.json', 'w', encoding='utf-8') as f:
         json.dump(horario, f, ensure_ascii=False, indent=2)
+        
+        with open('Reportes_horario.json', 'w', encoding='utf-8') as f:
+                json.dump(horario, f, ensure_ascii=False, indent=2)
 
 # Lista de días válidos para validación------------------------------------------------------------------------------
+
 DIAS_VALIDOS = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+DIAS_VALIDOS_ORDENADOS=sorted(DIAS_VALIDOS)
 
 # ============================================================================
 # FUNCIÓN: MOSTRAR HORARIO 
@@ -92,6 +98,7 @@ def agregar_evento():
     
 #Agrega una nueva clase o evento al horario----------------------------------------------------------------------------
     print('')
+    
     while True:
         materia = input("Ingresa la nueva materia o evento: ").strip().capitalize()
         
@@ -134,7 +141,7 @@ def agregar_evento():
     if hay_conflicto(dia, hora_inicio, hora_fin):
         print(" Ya existe una clase o evento en ese horario.")
         return
-
+    
         # Agregar al horario-------------------------------------------------------------------------------------------
     horario.append({
         'materia': materia,
@@ -144,11 +151,14 @@ def agregar_evento():
         'ubicacion': 'Aula  ' + ubicacion
     })
     
-    # Guardar en el archivo---------------------------------------------------------------------------------------------------
-    with open('RegistroHorario.json', 'w', encoding='utf-8') as f:
+# Guardar en el archivo---------------------------------------------------------------------------------------------------
+with open('RegistroHorario.json', 'w', encoding='utf-8') as f:
         json.dump(horario, f, ensure_ascii=False, indent=2)
         
-    with open('Reportes.json', 'w', encoding='utf-8') as f:
+with open('Reportes.json', 'w', encoding='utf-8') as f:
+        json.dump(horario, f, ensure_ascii=False, indent=2)
+        
+with open('Reportes_horario.json', 'w', encoding='utf-8') as f:
         json.dump(horario, f, ensure_ascii=False, indent=2)
     
 print(' Evento o clase agregada exitosamente.')
@@ -221,12 +231,15 @@ def modificar_evento():
     # Ubicación (sin validación)----------------------------------------------------------------------------------------------
     nueva_ubicacion = input(f'Ingresa la nueva ubicación (actual: {evento["ubicacion"]}):').strip().capitalize()
     evento['ubicacion'] = 'Aula ' + nueva_ubicacion
-            
+               
     # Guardar cambios-------------------------------------------------------------------------------------------------------------
     with open('RegistroHorario.json', 'w', encoding='utf-8') as f:
         json.dump(horario, f, ensure_ascii=False, indent=2)
                 
     with open('Reportes.json', 'w', encoding='utf-8') as f:
+        json.dump(horario, f, ensure_ascii=False, indent=2)
+        
+    with open('Reportes_horario.json', 'w', encoding='utf-8') as f:
         json.dump(horario, f, ensure_ascii=False, indent=2)
             
     print(' Evento o clase modificada exitosamente.')
@@ -280,6 +293,26 @@ def eliminar_evento():
     with open('Reportes.json', 'w', encoding='utf-8') as f:
                 json.dump(horario, f, ensure_ascii=False, indent=2)
                 
+    with open('Reportes_horario.json', 'w', encoding='utf-8') as f:
+                json.dump(horario, f, ensure_ascii=False, indent=2)
+                
                 print('')
                 print('Evento o clase eliminada exitosamente.')
         
+#===============================================================
+# FUNCION: REPORTE DIAS DE LA SEMANA
+#===============================================================
+def reporte_diario (DIAS_VALIDOS_ORDENADOS):
+    return sorted (DIAS_VALIDOS_ORDENADOS)
+
+print('')
+print('                            REPORTE DIARIO')
+print('________________________________________________________________________')
+print ('')
+
+
+#PROFE NO SUPE COMO IMPRIMIRLO :(
+    
+
+    
+
